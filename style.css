@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  margin: 200px 200px 400px 200px;
+  border: solid red 5px;
+}
+
+.container #c-1 {
+  background-color: cyan;
+  grid-column-start: 2;
+  grid-row: 1;
+}
+
+.container #c-2 {
+  grid-column-start: 1;
+  grid-row: 2;
+}
+
+.container #c-3 {
+  grid-column-start: 3;
+  grid-row: 2;
+}
+
+.container #c-4 {
+  grid-column-start: 2;
+  grid-row: 4;
+}
+
+.card{
+  text-align: center;
+  padding: 100px 30px;
+}
