@@ -7,24 +7,48 @@
   <link href="./index.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="flex justify-between bg-dark h-10 text-white">
-    <div>maxSabate.webDev</div>
-    <div>
-      <button>About Me</button>
-      <button>Resume</button>
-      <button>Contact</button>
+  <nav class="flex justify-between bg-dark h-16 text-white px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
+    <div class="flex">
+      <div class="flex items-center pr-5">
+        <img src="../public/images/sx.svg" alt="Logo">
+      </div>
+      <div class="flex items-center text-xl">
+        maxSabate.webDev
+      </div>
+    </div>
+    <div class="flex items-center gap-5">
+      <a class="hover:cursor-pointer">About Me</a>
+      <a class="hover:cursor-pointer">Resume</a>
+      <a class="hover:cursor-pointer">Contact</a>
     </div>
   </nav>
-  <div class="flex justify-between bg-red-500 h-[500px]">
-    <div>Hello World</div>
-    <div>Languages/Frameworks</div>
+  <div class="flex justify-between bg-blue h-[500px]"> <!-- HERO -->
+    <div>
+      <div>
+        <h2>Hello World!</h2>
+        <p>My name is Max and I am a front end web developer.</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h2>Languages and Frameworks</h2>
+        <div class="grid grid-cols-3">
+          <div>Html</div>
+          <div>CSS</div>
+          <div>JS</div>
+          <div>React</div>
+          <div>Tailwind</div>
+          <div>Sass</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="grid grid-cols-2 bg-green-500 h-[600px]">
-    <div>card1</div>
-    <div>card2</div>
-    <div>card3</div>
-    <div>card4</div>
+  <div class="grid grid-cols-2 bg-green-l h-[600px]"> <!-- PROJECTS -->
+    <div>Project 1</div>
+    <div>Project 2</div>
+    <div>Project 3</div>
+    <div>Project 4</div>
   </div>
-  <footer class="bg-yellow-500">Footer</footer>
+  <footer class="bg-dark">Footer</footer> <!-- FOOTER -->
 </body>
 </html>
