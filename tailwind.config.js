@@ -15,6 +15,9 @@ module.exports = {
         'hero-border-d': "url('../public/images/Rectangle dark.svg')",
         'hero-border-l': "url('../public/images/Rectangle light.svg')",
       },
+      boxShadow: {
+        'bottom': '0 25px 10px -5px rgba(0, 0, 0, 0.5)',
+      },
       colors: {
         'dark': '#323031',
         'light': '#50514F',
