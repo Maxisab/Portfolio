@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Max Sabate Portfolio</title>
   <link href="./index.css" rel="stylesheet">
+  <script src="./app.js" defer></script>
 </head>
 <body>
   <nav class="flex justify-between bg-dark h-16 text-white px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
@@ -22,50 +23,54 @@
       <a class="hover:cursor-pointer">Contact</a>
     </div>
   </nav>
-  <div class="relative flex justify-between bg-blue pt-40 pb-24"> <!-- HERO -->
-    <div class="w-[50%]">
-      <div class="bg-hero-border-d bg-contain bg-no-repeat h-[400px] w-[900px] ml-36 p-2">
-        <div class="p-10">
-          <h2 class="pb-8 pl-40 text-red-l text-[56px] font-sourceCode drop-shadow-lg">Hello World!</h2>
-          <p class="pl-[20px] pr-40 drop-shadow-lg text-white text-[24px]">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React Applications.
-          </p>
-          <!-- <p class="pl-1 pr-[200px] pt-6 drop-shadow-lg text-white text-[22px]">
-            I look forward to working together and build great apps!
-          </p> -->
-        </div>
-      </div>      
-    </div>
-    <div>
-      <div class="mt-48 mr-48">
-        <h2 class="text-[48px] border-b-4 border-red text-yellow">Languages and Technologies</h2>
-        <div class="grid grid-cols-3 justify-items-center">
-          <div class="m-10 bg-white rounded-xl">
-            <img src="../public/images/htmlIcon.svg" alt="HTML Icon">
+  <div id="hero" class="bg-blue"> <!-- HERO -->
+    <div class="flex justify-between pt-40 pb-16">
+      <div class="w-[50%]">
+        <div class="bg-hero-border-d bg-contain bg-no-repeat h-[400px] w-[900px] ml-36 p-2">
+          <div class="p-10">
+            <h2 class="pb-8 pl-40 text-red-l text-[56px] font-sourceCode drop-shadow-lg">Hello World!</h2>
+            <p class="pl-[20px] pr-40 drop-shadow-lg text-white text-[24px]">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React      Applications.
+            </p>
+            <!-- <p class="pl-1 pr-[200px] pt-6 drop-shadow-lg text-white text-[22px]">
+              I look forward to working together and build great apps!
+            </p> -->
           </div>
-          <div class="m-10 bg-white rounded-xl">
-            <img src="../public/images/cssIcon.svg" alt="CSS Icon">
-          </div>
-          <div class="m-10 bg-white rounded-xl">
-            <img src="../public/images/jsIcon.svg" alt="JS Icon">
-          </div>
-          <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
-            <img src="../public/images/reactIcon.svg" alt="React Icon">
-          </div>
-          <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
-            <img src="../public/images/tailwindIcon.svg" alt="Tailwind Icon">
-          </div>
-          <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
-            <img src="../public/images/sassIcon.svg" alt="Sass Icon">
+        </div>      
+      </div>
+      <div>
+        <div class="mt-48 mr-48">
+          <h2 class="text-[48px] border-b-4 border-red text-yellow">Languages and Technologies</h2>
+          <div class="grid grid-cols-3 justify-items-center">
+            <div class="m-10 bg-white rounded-xl">
+              <img src="../public/images/htmlIcon.svg" alt="HTML Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl">
+              <img src="../public/images/cssIcon.svg" alt="CSS Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl">
+              <img src="../public/images/jsIcon.svg" alt="JS Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
+              <img src="../public/images/reactIcon.svg" alt="React Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
+              <img src="../public/images/tailwindIcon.svg" alt="Tailwind Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
+              <img src="../public/images/sassIcon.svg" alt="Sass Icon">
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="absolute bottom-0 w-[100%]">
-      <div class="mb-5 text-center mx-[40%] border-b-4">test</div>
-    </div> -->
+    <div class="flex justify-center pb-5">
+      <div id="scrollBtn" class="bg-green-l py-2 px-4 border-4 border-blue-l shadow-xl rounded-2xl text-center text-black hover:cursor-pointer ease-in-out hover:-translate-y-1 transition-all before:content-['\25be'] after:content-['\25be']">
+        <span class="">PROJECTS</span>
+      </div>
+    </div>
   </div>
-  <div class="grid grid-cols-2 pt-32 pb-32 gap-y-32 justify-items-center bg-green-l"> <!-- PROJECTS -->
-    <div class="p-5 bg-green rounded-3xl hover:cursor-pointer ease-in-out hover:-translate-y-2 hover:shadow-bottom transition-all">
+  <div id="projects" class="grid grid-cols-2 pt-32 pb-32 gap-y-32 justify-items-center bg-green-l"> <!-- PROJECTS -->
+    <div class="p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
       <img 
         class="h-[300px] mb-5" 
         src="../public/images/FSG_SC.png"
@@ -73,7 +78,7 @@
       >
       <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
     </div>
-    <div class="p-5 bg-green rounded-3xl hover:cursor-pointer ease-in-out hover:-translate-y-2 hover:shadow-bottom transition-all">
+    <div class="p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
       <img 
         class="h-[300px] mb-5" 
         src="../public/images/FSG_SC.png"
@@ -81,7 +86,7 @@
       >
       <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
     </div>
-    <div class="p-5 bg-green rounded-3xl hover:cursor-pointer ease-in-out hover:-translate-y-2 hover:shadow-bottom transition-all">
+    <div class="p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
       <img 
         class="h-[300px] mb-5" 
         src="../public/images/FSG_SC.png"
@@ -89,7 +94,7 @@
       >
       <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
     </div>
-    <div class="p-5 bg-green rounded-3xl hover:cursor-pointer ease-in-out hover:-translate-y-2 hover:shadow-bottom transition-all">
+    <div class="p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
       <img 
         class="h-[300px] mb-5" 
         src="../public/images/FSG_SC.png"
