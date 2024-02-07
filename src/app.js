@@ -1,5 +1,5 @@
-
-document.getElementById('scrollBtn').addEventListener('click', function() {
+//Project button onClick to auto scroll to projects
+document.getElementById('scrollBtn').addEventListener('click', () => {
     scrollToSection('projects');
 })
 
@@ -9,3 +9,13 @@ function scrollToSection(sectionId) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+//Redircet to new url
+const redirectWebsite = (e) => {
+  let URL = e.currentTarget.getAttribute("data-URL");
+  window.location.href = URL;
+}
+
+document.querySelectorAll('.redirectButton').forEach((button) => {
+  button.addEventListener('click', redirectWebsite);
+});
