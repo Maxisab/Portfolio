@@ -1,3 +1,8 @@
+//Name scrolls to top
+document.getElementById('toTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
+
 //Project button onClick to auto scroll to projects
 document.getElementById('scrollBtn').addEventListener('click', () => {
     scrollToSection('projects');

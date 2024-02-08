@@ -8,19 +8,20 @@
   <script src="./app.js" defer></script>
 </head>
 <body>
-  <nav class="flex justify-between bg-dark h-16 text-white px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
+  <nav class="fixed top-0 z-10 flex justify-between w-full bg-dark h-16 text-white px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
     <div class="flex">
       <div class="flex items-center pr-5">
         <img src="../public/images/sx.svg" alt="Logo">
       </div>
-      <div class="flex items-center text-xl">
+      <div id="toTop" class="flex items-center text-xl select-none hover:cursor-pointer">
         maxSabate<span class="text-red-l">.webDev</span>
       </div>
     </div>
     <div class="flex items-center gap-5">
-      <a class="hover:cursor-pointer">About Me</a>
-      <a class="hover:cursor-pointer">Resume</a>
-      <a class="hover:cursor-pointer">Contact</a>
+      <a id="about" class="select-none hover:cursor-pointer">About Me</a>
+      <a class="select-none hover:cursor-pointer" href="https://github.com/Maxisab">GitHub</a>
+      <a id="resume" class="select-none hover:cursor-pointer">Resume</a>
+      <a id="contact" class="select-none hover:cursor-pointer">Contact</a>
     </div>
   </nav>
   <div id="hero" class="bg-blue"> <!-- HERO -->
@@ -65,43 +66,60 @@
     </div>
     <div class="flex justify-center pb-5">
       <div id="scrollBtn" class="bg-green-l py-2 px-4 border-4 border-blue-l shadow-xl rounded-2xl text-center text-black hover:cursor-pointer ease-in-out hover:-translate-y-1 transition-all before:content-['\25be'] after:content-['\25be']">
-        <span class="">PROJECTS</span>
+        <span>PROJECTS</span>
       </div>
     </div>
   </div>
-  <div id="projects" class="grid grid-cols-2 pt-32 pb-32 gap-y-32 justify-items-center bg-green-l"> <!-- PROJECTS -->
-    <div data-URL="https://freespeechgeek.com/" class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
-      <img 
-        class="h-[300px] mb-5" 
-        src="../public/images/FSG_SC.png"
-        alt="Freespeechgeek.com screenshot"
-      >
-      <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+  <div id="projects" class="pb-32 bg-green-l"> <!-- PROJECTS -->
+    <div class="flex justify-center py-20">
+      <h2 class="text-[48px] text-white text-center bg-green px-6 rounded-2xl shadow-xl">PROJECTS</h2>
     </div>
-    <div class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
-      <img 
-        class="h-[300px] mb-5" 
-        src="../public/images/FSG_SC.png"
-        alt="Freespeechgeek.com screenshot"
-      >
-      <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+    <div class="grid grid-cols-2 gap-y-32 justify-items-center">
+      <div data-URL="https://freespeechgeek.com/" class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
+        <img 
+          class="h-[300px] mb-5" 
+          src="../public/images/FSG_SC.png"
+          alt="Freespeechgeek.com screenshot"
+        >
+        <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+      </div>
+      <div class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
+        <img 
+          class="h-[300px] mb-5" 
+          src="../public/images/FSG_SC.png"
+          alt="Freespeechgeek.com screenshot"
+        >
+        <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+      </div>
+      <div class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
+        <img 
+          class="h-[300px] mb-5" 
+          src="../public/images/FSG_SC.png"
+          alt="Freespeechgeek.com screenshot"
+        >
+        <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+      </div>
+      <div class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
+        <img 
+          class="h-[300px] mb-5" 
+          src="../public/images/FSG_SC.png"
+          alt="Freespeechgeek.com screenshot"
+        >
+        <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+      </div>
     </div>
-    <div class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
-      <img 
-        class="h-[300px] mb-5" 
-        src="../public/images/FSG_SC.png"
-        alt="Freespeechgeek.com screenshot"
-      >
-      <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
+  </div>
+  <div class="bg-yellow"><!-- ABOUT ME -->
+    <div>
+      <div class="flex justify-center">
+        <h2 class="text-[48px] pt-8 text-center">About Me</h2></div>
     </div>
-    <div class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-white hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
-      <img 
-        class="h-[300px] mb-5" 
-        src="../public/images/FSG_SC.png"
-        alt="Freespeechgeek.com screenshot"
-      >
-      <p class="text-[26px] text-center text-white">FreeSpeechGeek client website</p>
-    </div>
+    <p class="text-center">
+      
+    </p>
+  </div>
+  <div><!-- RESUME -->
+
   </div>
   <footer class="bg-dark">Footer</footer> <!-- FOOTER -->
 </body>
