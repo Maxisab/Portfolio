@@ -15,6 +15,20 @@ function scrollToSection(sectionId) {
     }
 }
 
+//navbar scrollTo
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach(navLink => {
+    navLink.addEventListener("click", event => {
+      event.preventDefault();
+      const targetId = navLink.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+});
+
 //Redircet to new url
 const redirectWebsite = (e) => {
   let URL = e.currentTarget.getAttribute("data-URL");
