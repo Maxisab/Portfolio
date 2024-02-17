@@ -22,7 +22,7 @@ module.exports = {
         'dark': '#323031',
         'light': '#50514F',
         'yellow': '#FFC857',
-        'yellow-l': '#FFE066',
+        'yellow-l': 'rgba(255, 200, 87, .75)',
         'red': "#DB3A34",
         'red-l': '#F25F5C',
         'blue': '#084C61',
