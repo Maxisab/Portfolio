@@ -8,34 +8,32 @@
   <script src="./app.js" defer></script>
 </head>
 <body>
-  <nav class="fixed top-0 z-10 flex justify-between w-full bg-dark h-16 text-white px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
+  <nav class="fixed top-0 z-10 flex justify-between w-full bg-dark h-16 text-white mobile:px-0 desktop-l:px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
     <div class="flex">
       <div class="flex items-center pr-5">
         <img src="../public/images/sx.svg" alt="Logo">
       </div>
-      <div id="toTop" class="flex items-center text-xl select-none hover:cursor-pointer">
+      <div id="toTop" class="flex items-center mobile:text-m desktop-l:text-xl select-none hover:cursor-pointer">
         maxSabate<span class="text-red-l">.webDev</span>
       </div>
     </div>
-    <div class="flex items-center gap-2">
-      <a href="#projects" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Projects</a>
-      <a href="#about" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">About</a>
-      <a href="#resume" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Resume</a>
-      <a href="#contact" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Contact</a>
-      <a href="https://github.com/Maxisab" id="github" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">GitHub</a>
-    </div>
+    <ul class="dropdown mobile:hidden mobile:absolute mobile:right-0 mobile:top-[-160px] mobile:bg-dark desktop:flex ease-in-out transition-all items-center gap-2">
+      <li class="h-[100%] mobile:py-2"><a href="#projects" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Projects</a></li>
+      <li class="h-[100%] mobile:py-2"><a href="#about" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">About</a></li>
+      <li class="h-[100%] mobile:py-2"><a href="#resume" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Resume</a></li>
+      <li class="h-[100%] mobile:py-2"><a href="#contact" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Contact</a></li>
+      <li class="h-[100%] mobile:py-2"><a href="https://github.com/Maxisab" id="github" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">GitHub</a></li>
+    </ul>
+    <img class="toggle hidden" src="../public/images/burgerIcon.svg" alt="Menu">
   </nav>
   <div id="hero" class="bg-blue"> <!-- HERO -->
-    <div class="flex justify-between pt-40 pb-16">
-      <div class="w-[50%]">
-        <div class="bg-hero-border-d bg-contain bg-no-repeat h-[400px] w-[900px] ml-36 p-2">
-          <div class="p-10">
-            <h2 class="pb-8 pl-40 text-red-l text-[56px] font-sourceCode drop-shadow-lg">Hello World!</h2>
-            <p class="pl-[20px] pr-40 drop-shadow-lg text-white text-[24px]">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React      Applications.
+    <div class="desktop:flex justify-between pt-24 desktop:pt-40 desktop:pb-16">
+      <div class="desktop:w-[50%] flex justify-center">
+        <div class="bg-hero-border-d bg-contain bg-no-repeat h-[200px] w-[800px] desktop:h-[400px] desktop:w-[900px] desktop:ml-36 p-2">
+          <div class="desktop:p-10">
+            <h2 class="pb-2 pl-28 text-[20px] desktop:pb-8 desktop:pl-40 desktop:text-[56px] text-red-l font-sourceCode drop-shadow-lg">Hello World!</h2>
+            <p class="text-[14px] px-8 desktop:pl-[20px] desktop:pr-40 desktop:text-[24px] drop-shadow-lg text-white">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React      Applications.
             </p>
-            <!-- <p class="pl-1 pr-[200px] pt-6 drop-shadow-lg text-white text-[22px]">
-              I look forward to working together and build great apps!
-            </p> -->
           </div>
         </div>      
       </div>

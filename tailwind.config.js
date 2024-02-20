@@ -5,10 +5,12 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'tablet': '640px',
-      'laptop': '1024px',
+      'mobile': '320px',
+      'tablet': '768px',
+      'tablet-l': '1024px',
       'desktop': '1280px',
-      'desktop-l': '1800px'
+      'desktop-l': '1440px',
+      'desktop-xl': '1920px'
     },
     extend: {
       backgroundImage: {
