@@ -8,7 +8,7 @@
   <script src="./app.js" defer></script>
 </head>
 <body>
-  <nav class="fixed top-0 z-10 flex justify-between w-full bg-dark h-16 text-white mobile:px-0 desktop-l:px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
+  <nav class="fixed top-0 z-10 flex justify-between w-full bg-dark h-16 text-white px-3 desktop-l-px-5 border-b-4 border-yellow"> <!-- NAVBAR -->
     <div class="flex">
       <div class="flex items-center pr-5">
         <img src="../public/images/sx.svg" alt="Logo">
@@ -17,47 +17,53 @@
         maxSabate<span class="text-red-l">.webDev</span>
       </div>
     </div>
-    <ul class="dropdown mobile:hidden mobile:absolute mobile:right-0 mobile:top-[-160px] mobile:bg-dark desktop:flex ease-in-out transition-all items-center gap-2">
+    <ul id="navbarMenu" class="absolute right-[-95px] top-[60px] bg-dark desktop:static desktop:flex ease-in-out transition-all items-center gap-2">
       <li class="h-[100%] mobile:py-2"><a href="#projects" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Projects</a></li>
       <li class="h-[100%] mobile:py-2"><a href="#about" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">About</a></li>
       <li class="h-[100%] mobile:py-2"><a href="#resume" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Resume</a></li>
       <li class="h-[100%] mobile:py-2"><a href="#contact" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Contact</a></li>
       <li class="h-[100%] mobile:py-2"><a href="https://github.com/Maxisab" id="github" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">GitHub</a></li>
     </ul>
-    <img class="toggle hidden" src="../public/images/burgerIcon.svg" alt="Menu">
+    <img id="menuToggle" class="py-2 desktop:hidden" src="../public/images/burgerIcon.svg" alt="Menu">
   </nav>
   <div id="hero" class="bg-blue"> <!-- HERO -->
     <div class="desktop:flex justify-between pt-24 desktop:pt-40 desktop:pb-16">
       <div class="desktop:w-[50%] flex justify-center">
-        <div class="bg-hero-border-d bg-contain bg-no-repeat h-[200px] w-[800px] desktop:h-[400px] desktop:w-[900px] desktop:ml-36 p-2">
-          <div class="desktop:p-10">
-            <h2 class="pb-2 pl-28 text-[20px] desktop:pb-8 desktop:pl-40 desktop:text-[56px] text-red-l font-sourceCode drop-shadow-lg">Hello World!</h2>
-            <p class="text-[14px] px-8 desktop:pl-[20px] desktop:pr-40 desktop:text-[24px] drop-shadow-lg text-white">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React      Applications.
+        <div class="bg-hero-border-d bg-contain bg-center bg-no-repeat h-[200px] max-h-[200px] desktop:ml-36 p-2">
+          <div class="desktop:p-10 max-w-[360px]">
+            <h2 class="text-center text-2xl p-4 desktop:pb-8 desktop:text-[56px] text-red-l font-sourceCode drop-shadow-lg">Hello World!</h2>
+            <p class="text-center text-[14px] px-8 desktop:text-[24px] drop-shadow-lg text-white">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React Applications.
             </p>
           </div>
         </div>      
       </div>
       <div>
-        <div class="mt-48 mr-48">
-          <h2 class="text-[48px] border-b-4 border-red text-yellow">Languages and Technologies</h2>
-          <div class="grid grid-cols-3 justify-items-center">
-            <div class="m-10 bg-white rounded-xl">
+        <div class="mt-20 desktop-l:mt-48 desktop-l:mr-48">
+          <h2 class="text-2xl text-center desktop-l:text-[48px] border-b-4 border-red mx-auto w-fit text-yellow">Languages and Technologies</h2>
+          <div class="grid grid-cols-4 justify-items-center">
+            <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
               <img src="../public/images/htmlIcon.svg" alt="HTML Icon">
             </div>
-            <div class="m-10 bg-white rounded-xl">
+            <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
               <img src="../public/images/cssIcon.svg" alt="CSS Icon">
             </div>
-            <div class="m-10 bg-white rounded-xl">
+            <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
               <img src="../public/images/jsIcon.svg" alt="JS Icon">
             </div>
-            <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
+            <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
               <img src="../public/images/reactIcon.svg" alt="React Icon">
             </div>
-            <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
+            <div class="m-10 p-1 bg-white rounded-xl h-[64px] w-[64px]">
               <img src="../public/images/tailwindIcon.svg" alt="Tailwind Icon">
             </div>
-            <div class="m-10 bg-white rounded-xl h-[96px] w-[96px]">
-              <img src="../public/images/sassIcon.svg" alt="Sass Icon">
+            <div class="m-10 p-1 bg-white rounded-xl h-[64px] w-[64px]">
+              <img src="../public/images/firebaseIcon.svg" alt="Firebase Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
+              <img src="../public/images/nodeIcon.svg" alt="NodeJS Icon">
+            </div>
+            <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
+              <img src="../public/images/gitIcon.svg" alt="GIT Icon">
             </div>
           </div>
         </div>
@@ -73,7 +79,7 @@
     <div class="flex justify-center py-20">
       <h2 class="text-[48px] text-white text-center bg-green px-6 border-4 border-yellow rounded-2xl shadow-xl">PROJECTS</h2>
     </div>
-    <div class="grid grid-cols-2 gap-y-32 justify-items-center">
+    <div class="grid grid-cols-1 gap-y-24 desktop-l:gap-y-32 justify-items-center">
       <div>
         <div data-URL="https://freespeechgeek.com/" class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-yellow hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
           <img 
@@ -132,7 +138,7 @@
       </div>
     </div>
   </div>
-  <div id="about" class="bg-yellow-l pb-20"><!-- ABOUT ME -->
+  <div id="about" class="bg-yellow-l pb-20"><!-- ABOUT-->
     <div>
       <div class="flex justify-center py-20">
         <h2 class="text-[48px] bg-[rgba(255,200,87,.6)] px-6 border-4 border-red-l rounded-2xl shadow-xl text-dark">ABOUT</h2></div>

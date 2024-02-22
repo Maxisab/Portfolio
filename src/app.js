@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetId = navLink.getAttribute('href');
       const targetSection = document.querySelector(targetId);
       targetSection.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('navbarMenu').classList.remove('right-[0px]')
+      document.getElementById('navbarMenu').classList.add('right-[-95px]');
     });
   });
 });
@@ -43,4 +45,10 @@ const redirectWebsite = (e) => {
 
 document.querySelectorAll('.redirectButton').forEach((button) => {
   button.addEventListener('click', redirectWebsite);
+});
+
+//burger icon toggle
+document.getElementById('menuToggle').addEventListener('click', () => {
+  document.getElementById('navbarMenu').classList.toggle('right-[-95px]');
+  document.getElementById('navbarMenu').classList.toggle('right-[0px]');
 });
