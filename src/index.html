@@ -13,33 +13,33 @@
       <div class="flex items-center pr-5">
         <img src="../public/images/sx.svg" alt="Logo">
       </div>
-      <div id="toTop" class="flex items-center mobile:text-m desktop-l:text-xl select-none hover:cursor-pointer">
+      <div id="toTop" class="flex items-center text-m desktop:text-xl select-none hover:cursor-pointer">
         maxSabate<span class="text-red-l">.webDev</span>
       </div>
     </div>
     <ul id="navbarMenu" class="absolute right-[-95px] top-[60px] bg-dark desktop:static desktop:flex ease-in-out transition-all items-center gap-2">
-      <li class="h-[100%] mobile:py-2"><a href="#projects" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Projects</a></li>
-      <li class="h-[100%] mobile:py-2"><a href="#about" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">About</a></li>
-      <li class="h-[100%] mobile:py-2"><a href="#resume" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Resume</a></li>
-      <li class="h-[100%] mobile:py-2"><a href="#contact" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Contact</a></li>
-      <li class="h-[100%] mobile:py-2"><a href="https://github.com/Maxisab" id="github" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">GitHub</a></li>
+      <li class="h-[100%] py-2 desktop:py-0"><a href="#projects" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Projects</a></li>
+      <li class="h-[100%] py-2 desktop:py-0"><a href="#about" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">About</a></li>
+      <li class="h-[100%] py-2 desktop:py-0"><a href="#resume" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Resume</a></li>
+      <li class="h-[100%] py-2 desktop:py-0"><a href="#contact" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">Contact</a></li>
+      <li class="h-[100%] py-2 desktop:py-0"><a href="https://github.com/Maxisab" id="github" class="px-4 h-[100%] flex items-center select-none hover:cursor-pointer hover:bg-light">GitHub</a></li>
     </ul>
     <img id="menuToggle" class="py-1 desktop:hidden" src="/public/images/burgerIcon.svg" alt="Menu">
   </nav>
   <div id="hero" class="bg-blue"> <!-- HERO -->
-    <div class="desktop:flex justify-between pt-24 desktop:pt-40 desktop:pb-16">
-      <div class="desktop:w-[50%] flex justify-center">
-        <div class="bg-hero-border-d bg-contain bg-center bg-no-repeat h-[200px] max-h-[200px] desktop:ml-36 p-2">
-          <div class="desktop:p-10 max-w-[360px]">
-            <h2 class="text-center text-2xl p-4 desktop:pb-8 desktop:text-[56px] text-red-l font-sourceCode drop-shadow-lg">Hello World!</h2>
-            <p class="text-center text-[14px] px-8 desktop:text-[24px] drop-shadow-lg text-white">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React Applications.
+    <div class="tablet-l:flex desktop-l:gap-20 pt-24 desktop-l:pt-40 desktop-l:pb-16">
+      <div class="tablet-l:w-[50%] flex justify-center">
+        <div class="bg-hero-border-d bg-contain bg-center bg-no-repeat h-[800px] max-h-[200px] desktop:max-h-[350px] desktop-l:max-h-[350px] tablet-l:mt-12 desktop:ml-36 p-2">
+          <div class="desktop:p-10 max-w-[360px] desktop:max-w-[800px]">
+            <h2 class="text-center text-2xl p-4 desktop:py-8 desktop:ml-12 desktop:text-[36px] desktop-xl:pb-8 desktop-xl:text-[56px] text-red-l font-sourceCode drop-shadow-lg">Hello World!</h2>
+            <p class="text-center text-[14px] px-8 desktop:px-2 desktop:text-[18px] desktop:mr-4 desktop-xl:text-[24px] drop-shadow-lg text-white">My name is Max and I am a front end web developer in Portland, OR, USA. I've been building websites for over a year now with an emphasis on React Applications.
             </p>
           </div>
         </div>      
       </div>
-      <div>
-        <div class="mt-20 desktop-l:mt-48 desktop-l:mr-48">
-          <h2 class="text-2xl text-center desktop-l:text-[48px] border-b-4 border-red mx-auto w-fit text-yellow">Languages and Technologies</h2>
+      <div class="tablet-l:w-[50%] flex justify-center">
+        <div class=" mt-20 desktop-l:mt-48">
+          <h2 class="text-2xl text-center desktop:pb-2 desktop:text-[36px] desktop-xl:text-[48px] border-b-4 border-red mx-auto w-fit text-yellow">Languages and Technologies</h2>
           <div class="grid grid-cols-4 justify-items-center">
             <div class="m-10 bg-white rounded-xl h-[64px] w-[64px]">
               <img src="../public/images/htmlIcon.svg" alt="HTML Icon">
@@ -79,7 +79,7 @@
     <div class="flex justify-center py-20">
       <h2 class="text-[48px] text-white text-center bg-green px-6 border-4 border-yellow rounded-2xl shadow-xl">PROJECTS</h2>
     </div>
-    <div class="grid grid-cols-1 gap-y-24 desktop-l:gap-y-32 justify-items-center">
+    <div class="grid grid-cols-1 desktop:grid-cols-2 desktop:gap-x-12 desktop:px-12 gap-y-24 desktop-l:gap-y-32 justify-items-center">
       <div>
         <div data-URL="https://freespeechgeek.com/" class="redirectButton p-5 bg-green rounded-3xl border-4 border-green-l hover:border-yellow hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
           <img 
@@ -116,7 +116,7 @@
             alt="Freespeechgeek.com screenshot"
           >
           <p class="text-[26px] text-center text-white">Finance App</p>
-          <p class="text-[18px] text-center text-white">Personal app made with React, authenticated with Google Firebase</p>
+          <p class="text-[18px] text-center text-white">Personal React app, authenticated with Google Firebase</p>
         </div>
         <div data-URL="https://github.com/Maxisab/finance-app" class="redirectButton text-[26px] text-center text-white mt-5 p-5 bg-green rounded-3xl border-4 border-green-l hover:border-yellow hover:cursor-pointer hover:-translate-y-2 hover:shadow-bottom ease-in-out transition-all">
           Github
@@ -143,7 +143,7 @@
       <div class="flex justify-center py-20">
         <h2 class="text-[48px] bg-[rgba(255,200,87,.6)] px-6 border-4 border-red-l rounded-2xl shadow-xl text-dark">ABOUT</h2></div>
       </div>
-    <div class="px-5 desktop-l:px-96 text-s desktop-l:text-xl text-black">
+    <div class="px-5 tablet-l:px-40 desktop:px-56 desktop-xl:px-96 text-s desktop-xl:text-xl text-black">
       <p>Hello there! I'm Max, a passionate and creative Web Developer with a keen eye for detail and a love for crafting high-quality, user-centric digital experiences. I have over 1 year of hands-on experience working with clients to build applications through my own business. I really enjoy working with people to turn their ideas into reality through code and design.</p><br>
       <p>I know HTML, CSS, and JS very extensivley. I specialize in React Applications and utilize a variety of different libraries and technologies depending on my client or my needs. Including but not limited to Tailwind, Firebase, MongoDB, WordPress, Sass, Docker, Material UI, Gulp bundler, WebPack bundler, Parcel, etc. I mainly code in the Linux environment but also use Windows or WSL if needed.</p><br>
       <p>I believe what sets me apart from other developers is my ability to collaborate with others, communicate effectively, and my ability to adapt to new technologies and trends. I'm a very quick learner and adept at combining new technologies and methodologies efficiently. This has allowed me to adapt to new languages and frameworks as required by my clients projects or my own.</p><br>
@@ -155,7 +155,7 @@
       <h2 class="text-[48px] text-dark text-center bg-yellow px-6 border-4 border-blue-l rounded-2xl shadow-xl">RESUME</h2>
     </div>
     <div class="flex justify-center">
-        <embed class="w-[360px] h-[500px] desktop-l:w-[925px] desktop-l:h-[1200px]" src="./assets/MaxSabResume2024.pdf"  type="application/pdf">
+        <embed class="w-[360px] h-[500px] tablet:w-[750px] tablet:h-[975px] desktop:w-[925px] desktop:h-[1200px]" src="./assets/MaxSabResume2024.pdf"  type="application/pdf">
     </div>
   </div>
   <footer id="contact" class="bg-dark pb-20"> <!-- FOOTER -->
