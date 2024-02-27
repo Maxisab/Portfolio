@@ -10,7 +10,8 @@ module.exports = {
       'tablet-l': '1024px',
       'desktop': '1280px',
       'desktop-l': '1440px',
-      'desktop-xl': '1920px'
+      'desktop-xl': '1780px',
+      'desktop-xxl': '2100px'
     },
     extend: {
       backgroundImage: {
