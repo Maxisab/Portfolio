@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "./**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -15,8 +15,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-border-d': "url('../public/images/Rectangle dark.svg')",
-        'hero-border-l': "url('../public/images/Rectangle light.svg')",
+        'hero-border-d': "url('/public/images/Rectangle dark.svg')",
+        'hero-border-l': "url('/public/images/Rectangle light.svg')",
       },
       boxShadow: {
         'bottom': '0 25px 10px -5px rgba(0, 0, 0, 0.5)',
